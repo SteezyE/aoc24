@@ -2,10 +2,7 @@
 
 a = $<.map{|x| x.split.map &:to_i}
 res = 0
-cnt = 0
 a.each{|x|    
-    cnt += 1 
-    p cnt
     n = x.size-2 
     for i in 0...(1<<(2*n)) do
         cur = x[1]
